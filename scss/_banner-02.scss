@@ -1,0 +1,24 @@
+.banner-02 {
+    background: url("../img/upcoming-bg.jpeg");
+    background-size: cover;
+    padding: 120px 0 50px;
+    color: #fff;
+    .banner_content {
+        width: 100%;
+        text-align: center;
+        h1 {
+            font-size: 70px;
+            @media (max-width: 500px) {
+                font-size: 45px;
+            }
+        }
+        @media (max-width: 1022px) {
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 1022px) {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+}

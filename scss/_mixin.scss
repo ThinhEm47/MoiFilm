@@ -1,0 +1,24 @@
+@mixin posAbsolute($direction, $x, $y) {
+    position: absolute;
+    @if ($direction == "tr") {
+        top: $y;
+        right: $x;
+    }
+    @if ($direction == "tl") {
+        top: $y;
+        left: $x;
+    }
+    @if ($direction == "bl") {
+        bottom: $y;
+        left: $x;
+    }
+    @if ($direction == "br") {
+        bottom: $y;
+        right: $x;
+    }
+}
+@mixin dpFlex($align, $jus) {
+    display: flex;
+    align-items: $align;
+    justify-content: $jus;
+}

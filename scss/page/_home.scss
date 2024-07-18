@@ -1,0 +1,33 @@
+.listMovie {
+    position: relative;
+    color: #fff;
+
+    background-size: cover;
+    padding: 50px 0;
+
+    &_headline {
+        font-size: 30px;
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 15px;
+            font-weight: 400;
+            color: $primary-color;
+        }
+        h1 {
+            font-size: 35px;
+            font-weight: 600;
+            @media (max-width: 825px) {
+                font-size: 30px;
+            }
+        }
+    }
+    .cardMovie {
+        width: 201px;
+        margin: 0 10px;
+    }
+    font-size: 35px;
+    @media (max-width: 825px) {
+        padding: 25px 0;
+    }
+}

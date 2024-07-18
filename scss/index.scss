@@ -1,0 +1,16 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+@import "./base.scss";
+
+@import "./banner";
+@import "./banner-02";
+
+@import "./component/header";
+@import "./component/footer";
+@import "./component/cardmovie";
+@import "./component/loading";
+
+@import "./page/home";
+@import "./page/detail-film";
+@import "./page/listmoives";
+@import "./page/detail-actor";

@@ -1,0 +1,114 @@
+.detailactor {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    color: #fff;
+    background-image: url("/img/bg-detailfilm.jpg");
+    background-size: cover;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &_left {
+        width: 35%;
+        img {
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 3px solid $primary-color;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        @media (max-width: 822px) {
+            width: 100%;
+        }
+    }
+    &_right {
+        width: calc(65% - 40px);
+        h3 {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            @media (max-width: 822px) {
+                font-size: 45px;
+            }
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 20px;
+            .sub-info {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                .info-title {
+                    margin-right: 10px;
+                    color: $primary-color;
+                    font-weight: 100;
+                }
+                .text {
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                }
+                @media (max-width: 500px) {
+                    margin: 0;
+                    justify-content: center;
+                }
+            }
+            @media (max-width: 500px) {
+                margin: 0;
+                display: block;
+            }
+        }
+        .know {
+            margin-bottom: 20px;
+            .text-know {
+                letter-spacing: 0.5px;
+            }
+        }
+        .title {
+            margin-bottom: 0;
+            font-weight: 300;
+
+            color: $primary-color;
+        }
+        .text-content {
+            letter-spacing: 0.5px;
+            display: -webkit-box;
+            margin: 5px 0 10px;
+            font-weight: 200;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 8;
+            overflow: hidden;
+
+            &.active {
+                display: block;
+            }
+        }
+        .show-text {
+            color: #696969;
+            cursor: pointer;
+            text-align: end;
+            font-size: 14px;
+            transition: 0.3s;
+            &:hover {
+                color: $primary-color;
+            }
+            &.active {
+                display: none;
+            }
+        }
+        @media (max-width: 822px) {
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.moviecast_list {
+    .cardMovie {
+        margin: 0 10px;
+    }
+}

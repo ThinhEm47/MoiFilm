@@ -1,0 +1,80 @@
+.cardMovie,
+.actor {
+    transition: 0.5s;
+    position: relative;
+    z-index: 5555;
+    color: #fff;
+    .thumb > img {
+        border-radius: 10px;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.623);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
+    .content-film {
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        transition: 0.3s;
+        z-index: 3;
+        opacity: 0;
+        pointer-events: none;
+        h3 {
+            margin: 5px 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-color;
+            @media (max-width: 770px) {
+                font-size: 18px;
+            }
+            @media (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+        .time {
+            @include dpFlex(center, space-between);
+        }
+        .day {
+            font-size: 13px;
+            @media (max-width: 500px) {
+                font-size: 12px;
+            }
+        }
+        .rate {
+            font-size: 13px;
+            color: #ffea00;
+            cursor: pointer;
+        }
+        @media (max-width: 1025px) {
+            position: static;
+            padding: 0;
+            opacity: 1;
+            pointer-events: visible;
+        }
+    }
+    &:hover .content-film {
+        top: 0;
+        opacity: 1;
+        pointer-events: visible;
+    }
+}
+.slick-arrow {
+    transition: 0.3s;
+    &:hover::before {
+        color: $primary-color;
+    }
+}
