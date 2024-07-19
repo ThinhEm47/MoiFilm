@@ -1269,6 +1269,7 @@ button {
   align-items: center;
 }
 .detailactor_right-info .sub-info .info-title {
+  width: 110px;
   margin-right: 10px;
   color: #86c3ec;
   font-weight: 100;
@@ -1280,13 +1281,13 @@ button {
 @media (max-width: 500px) {
   .detailactor_right-info .sub-info {
     margin: 0;
-    justify-content: center;
   }
 }
 @media (max-width: 500px) {
   .detailactor_right-info {
     margin: 0;
     display: block;
+    font-size: 0.875rem;
   }
 }
 .detailactor_right .know {
@@ -1297,7 +1298,7 @@ button {
 }
 .detailactor_right .title {
   margin-bottom: 0;
-  font-weight: 300;
+  font-weight: 200;
   color: #86c3ec;
 }
 .detailactor_right .text-content {
