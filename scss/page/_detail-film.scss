@@ -180,6 +180,26 @@
         iframe {
             width: 1200px;
             height: 600px;
+            @media (max-width: 1025px) {
+                width: 1000px;
+                height: 500px;
+            }
+            @media (max-width: 825px) {
+                width: 750px;
+                height: 375px;
+            }
+            @media (max-width: 450px) {
+                width: 400px;
+                height: 200px;
+            }
+            @media (max-width: 400px) {
+                width: 360px;
+                height: 175px;
+            }
+            @media (max-width: 350px) {
+                width: 330px;
+                height: 165px;
+            }
         }
     }
 }
@@ -268,10 +288,6 @@
                     display: none;
                 }
             }
-        }
-        iframe {
-            width: 1200px;
-            height: 700px;
         }
     }
 }

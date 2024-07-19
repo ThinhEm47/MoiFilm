@@ -1054,6 +1054,36 @@ button {
   width: 1200px;
   height: 600px;
 }
+@media (max-width: 1025px) {
+  .trailer_film iframe {
+    width: 1000px;
+    height: 500px;
+  }
+}
+@media (max-width: 825px) {
+  .trailer_film iframe {
+    width: 750px;
+    height: 375px;
+  }
+}
+@media (max-width: 450px) {
+  .trailer_film iframe {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .trailer_film iframe {
+    width: 360px;
+    height: 175px;
+  }
+}
+@media (max-width: 350px) {
+  .trailer_film iframe {
+    width: 330px;
+    height: 165px;
+  }
+}
 
 .cast {
   background-image: url("../img/footer-bg.jpeg");
@@ -1140,10 +1170,6 @@ button {
 }
 .recommend_list-content .show-text.active {
   display: none;
-}
-.recommend_list iframe {
-  width: 1200px;
-  height: 700px;
 }
 
 .list-movies {
