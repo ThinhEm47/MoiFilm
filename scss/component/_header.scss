@@ -13,6 +13,9 @@
 
         img {
             width: 187px;
+            @media (max-width: 550px) {
+                width: 150px;
+            }
         }
     }
     &_menu {
@@ -214,6 +217,9 @@
         }
         @media (max-width: 991px) {
             display: block;
+        }
+        @media (max-width: 550px) {
+            padding: 11px 18px;
         }
     }
     &::before {

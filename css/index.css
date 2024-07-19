@@ -228,6 +228,11 @@ button {
 .header_logo img {
   width: 187px;
 }
+@media (max-width: 550px) {
+  .header_logo img {
+    width: 150px;
+  }
+}
 .header_menu > ul {
   display: flex;
   align-items: center;
@@ -432,6 +437,11 @@ button {
 @media (max-width: 991px) {
   .header_bars {
     display: block;
+  }
+}
+@media (max-width: 550px) {
+  .header_bars {
+    padding: 11px 18px;
   }
 }
 .header::before {
