@@ -64,9 +64,12 @@
             background-color: #514747dc;
             color: $primary-color;
         }
+        @media (max-width: 550px) {
+            margin-top: 10px;
+        }
     }
     @media (max-width: 1022px) {
-        padding-top: 80px;
+        padding-top: 75px;
     }
 
     @keyframes banner {

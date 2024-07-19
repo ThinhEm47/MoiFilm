@@ -124,9 +124,14 @@ button {
   background-color: rgba(81, 71, 71, 0.862745098);
   color: #86c3ec;
 }
+@media (max-width: 550px) {
+  .banner_watch {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 1022px) {
   .banner {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 }
 @keyframes banner {
