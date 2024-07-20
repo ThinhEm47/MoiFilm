@@ -1,14 +1,13 @@
-@import "./variable.scss";
-@import "./mixin.scss";
-@import "./base.scss";
-
-@import "./banner";
-@import "./banner-02";
+@import "./helper/base";
+@import "./helper/mixin";
+@import "./helper/variable";
 
 @import "./component/header";
 @import "./component/footer";
 @import "./component/cardmovie";
 @import "./component/loading";
+@import "./component/banner";
+@import "./component/banner-02";
 
 @import "./page/home";
 @import "./page/detail-film";
